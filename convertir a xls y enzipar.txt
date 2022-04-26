@@ -1,0 +1,16 @@
+correr limpiador pef:
+python v1.py 202101 202101_AGUI_B.xlsx
+
+LOS ARCHIVOS PARA LIMPIAR SE GUARDARAN EN LA CARPETA "OK"
+
+NOTA: cambiar ISRHOMO a FAR.
+
+Agregar libre office al path:
+C:\Program Files\LibreOffice\program
+
+DE XLSX A XLS:
+forfiles /s /m *.xlsx /c "cmd /c soffice --convert-to xls @file"
+
+ENZIPAR:
+forfiles /s /m *.txt /c "cmd /c tar -cf @FNAME.zip @FILE"
+
